@@ -286,7 +286,7 @@ main {
 .feature-section {
     display: flex;
     padding: 60px 20px;
-   background-image:url(./rainbowbg.jpg);
+   background-image:url(./assets/rainbowbg.jpg);
    background-size: contain;  /* Light grey background for feature section */
     align-items: center;
     justify-content:space-around ; /* content horizontally */
