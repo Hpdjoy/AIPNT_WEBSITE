@@ -114,7 +114,10 @@ main {
     width: 100vw;
 }
 .mobile-logo{
-    visibility: hidden;
+    visibility: none;
+}
+.mobile-logo img{
+    display: none;
 }
 
 .hero {
@@ -709,6 +712,7 @@ footer{
     }
     .mobile-logo img{
     height: 100px;
+    display: block;
     }
     .headText{
         font-family: Arial, Helvetica, sans-serif;
