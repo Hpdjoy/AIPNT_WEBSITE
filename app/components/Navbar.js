@@ -45,7 +45,7 @@ export default function Navbar() {
             <span className="dropbtn">Solutions <FaCaretDown className="caret" /></span>
             <div className="dropdown-content">
               <Link href="/corporate-training" onClick={closeMenu}>Corporate Training</Link>
-              <Link href="/summer-internship" onClick={closeMenu}>Summer Internship</Link>
+              <Link href="/summer-internship" onClick={closeMenu}>College Training Programs</Link>
               <Link href="/school-stem" onClick={closeMenu}>School STEM</Link>
               <Link href="/government" onClick={closeMenu}>Government Programs</Link>
             </div>

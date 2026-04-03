@@ -14,20 +14,34 @@ import {
   FaBars,
   FaTimes,
   FaArrowRight,
-  FaExternalLinkAlt
+  FaExternalLinkAlt,
+  FaBuilding,
+  FaUserGraduate,
+  FaFlask,
+  FaLandmark,
+  FaCog,
+  FaAtom,
+  FaCalculator,
+  FaMicrochip,
+  FaDna,
+  FaRobot
 } from 'react-icons/fa';
 
 const offerings = [
   {
     title: 'Corporate Training',
     href: '/corporate-training',
+    icon: <FaBuilding />,
+    audience: 'For Enterprises',
     description:
       'Industry-focused Generative AI, Deep Learning, cloud and automation tracks for enterprise upskilling with measurable intelligent outcomes.',
     points: ['Role-based AI & ML curriculum', 'Hands-on neural network labs', 'Prompt Engineering certification']
   },
   {
-    title: 'Summer Internship',
+    title: 'College Training Programs',
     href: '/summer-internship',
+    icon: <FaUserGraduate />,
+    audience: 'For College Students',
     description:
       'Mentor-led internships offering college students real product development cycles focused on LLMs, Computer Vision, and AI-driven IoT.',
     points: ['Live AI-model training sprints', 'AI product portfolio & demo day', 'Machine Learning career support']
@@ -35,16 +49,20 @@ const offerings = [
   {
     title: 'School STEM Programs',
     href: '/school-stem',
+    icon: <FaFlask />,
+    audience: 'For Schools',
     description:
       'Age-appropriate AI & STEM programming for schools, evolving from foundational coding to advanced robotics and machine learning innovation labs.',
     points: ['AI Literacy for teachers', 'Smart AI Lab setup support', 'Global AI & Robotics competitions']
   },
   {
-    title: 'Government Work Orders',
+    title: 'School Transformation',
     href: '/government',
+    icon: <FaLandmark />,
+    audience: 'For Government',
     description:
-      'Execution-ready digital skills and AI-awareness training programs for public institutions under large-scale government initiatives.',
-    points: ['Scalable AI deployment model', 'Data-driven compliance reporting', 'Smart district rollout support']
+      'AI-powered learning ecosystems for government schools — transforming classrooms with personalized learning, teacher empowerment, and hands-on STEM hardware kits at scale.',
+    points: ['AI-Powered Learning Ecosystem', 'Teacher Capacity Building', 'STEM & Robotics Hardware Kits', 'State-wide Scalable Deployment']
   }
 ];
 
@@ -67,19 +85,23 @@ export default function HomePage() {
       <main>
         <section className="tech-marquee-bar">
           <div className="marquee-content">
-            <span>Robotics & AI</span><span className="dot">•</span>
-            <span>MERN Stack</span><span className="dot">•</span>
-            <span>Internet of Things (IoT)</span><span className="dot">•</span>
-            <span>Python & Data Science</span><span className="dot">•</span>
-            <span>Cloud & DevOps</span><span className="dot">•</span>
-            <span>School to Corporate Tech Education</span><span className="dot">•</span>
+            <span>5000+ Students Empowered</span><span className="dot">•</span>
+            <span>AI-Powered Learning Ecosystems</span><span className="dot">•</span>
+            <span>Custom Hardware Kits</span><span className="dot">•</span>
+            <span>200+ School Partnerships</span><span className="dot">•</span>
+            <span>Teacher Capacity Building</span><span className="dot">•</span>
+            <span>Regional Language Support</span><span className="dot">•</span>
+            <span>State-wide Scalability</span><span className="dot">•</span>
+            <span>Learn & Earn Model</span><span className="dot">•</span>
             
-            <span aria-hidden="true">Robotics & AI</span><span className="dot" aria-hidden="true">•</span>
-            <span aria-hidden="true">MERN Stack</span><span className="dot" aria-hidden="true">•</span>
-            <span aria-hidden="true">Internet of Things (IoT)</span><span className="dot" aria-hidden="true">•</span>
-            <span aria-hidden="true">Python & Data Science</span><span className="dot" aria-hidden="true">•</span>
-            <span aria-hidden="true">Cloud & DevOps</span><span className="dot" aria-hidden="true">•</span>
-            <span aria-hidden="true">School to Corporate Tech Education</span>
+            <span aria-hidden="true">5000+ Students Empowered</span><span className="dot" aria-hidden="true">•</span>
+            <span aria-hidden="true">AI-Powered Learning Ecosystems</span><span className="dot" aria-hidden="true">•</span>
+            <span aria-hidden="true">Custom Hardware Kits</span><span className="dot" aria-hidden="true">•</span>
+            <span aria-hidden="true">200+ School Partnerships</span><span className="dot" aria-hidden="true">•</span>
+            <span aria-hidden="true">Teacher Capacity Building</span><span className="dot" aria-hidden="true">•</span>
+            <span aria-hidden="true">Regional Language Support</span><span className="dot" aria-hidden="true">•</span>
+            <span aria-hidden="true">State-wide Scalability</span><span className="dot" aria-hidden="true">•</span>
+            <span aria-hidden="true">Learn & Earn Model</span>
           </div>
         </section>
 
@@ -100,16 +122,24 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="popular-courses-section" id="offerings">
-          <h2>Our New Focus Areas</h2>
-          <p className="explore-text">Built for schools, colleges, corporates and public institutions</p>
-          <div className="courses-grid offering-grid">
-            {offerings.map((offering) => (
-              <Link href={offering.href} key={offering.title} className="course-card-link">
-                <article className="course-card">
+        <section className="focus-areas-section" id="offerings">
+          <div className="focus-areas-bg"></div>
+          <div className="focus-header">
+            <h2>Our Focus Areas</h2>
+            <p>Empowering every stage of the learning journey — from classrooms to boardrooms</p>
+          </div>
+          
+          <div className="focus-cards-container">
+            {offerings.map((offering, index) => (
+              <Link href={offering.href} key={offering.title} className="focus-card-link">
+                <article className="focus-card">
+                  <div className="focus-card-icon">
+                    {offering.icon}
+                  </div>
+                  <div className="focus-card-audience">{offering.audience}</div>
                   <h3>{offering.title}</h3>
-                  <p className="course-desc">{offering.description}</p>
-                  <ul className="offering-points">
+                  <p>{offering.description}</p>
+                  <ul className="focus-card-points">
                     {offering.points.map((point) => (
                       <li key={point}>
                         <FaCheckCircle aria-hidden="true" />
@@ -117,9 +147,10 @@ export default function HomePage() {
                       </li>
                     ))}
                   </ul>
-                  <span className="card-explore">
-                    Learn More <FaArrowRight />
-                  </span>
+                  <div className="focus-card-cta">
+                    <span>Explore Program</span>
+                    <FaArrowRight />
+                  </div>
                 </article>
               </Link>
             ))}
@@ -171,7 +202,7 @@ export default function HomePage() {
 
         <section className="comprehensive-learning-section" id="internship">
           <div className="comprehensive-learning-header">
-            <h2>Summer Internship Programs</h2>
+            <h2>College Training Programs</h2>
             <p>For college students and fresh graduates</p>
           </div>
           <div className="learning-cards-container">
@@ -196,6 +227,15 @@ export default function HomePage() {
         </section>
 
         <section className="visionary-moment" id="stem">
+          <div className="stem-circuit-bg"></div>
+          <div className="stem-floating-elements">
+            <div className="stem-icon"><FaAtom /></div>
+            <div className="stem-icon"><FaCog /></div>
+            <div className="stem-icon"><FaCalculator /></div>
+            <div className="stem-icon"><FaMicrochip /></div>
+            <div className="stem-icon"><FaDna /></div>
+            <div className="stem-icon"><FaRobot /></div>
+          </div>
           <div className="video-container">
             <iframe
               width="766"
@@ -219,58 +259,123 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="testimonials-section" id="government">
-          <h2>Government Work Orders</h2>
-          <p className="testimonials-subtitle">Implementation-ready partner for school and college-level programs</p>
-          <div className="testimonials-container">
-            <article className="testimonial-card">
-              <p className="testimonial-text">
-                State and district deployments for STEM and digital skills with standardized academic and progress
-                reports.
-              </p>
-              <div className="testimonial-author">
-                <img src="/image/User.png" alt="Implementation" />
-                <div className="author-info">
-                  <h4 className="author-name">Program Implementation</h4>
-                  <p className="author-desc">Turnkey execution with local coordination</p>
-                </div>
-              </div>
-            </article>
-            <article className="testimonial-card">
-              <p className="testimonial-text">
-                Procurement-compatible documentation, utilization reports and project governance aligned with public
-                program standards.
-              </p>
-              <div className="testimonial-author">
-                <img src="/image/User.png" alt="Compliance" />
-                <div className="author-info">
-                  <h4 className="author-name">Compliance and Reporting</h4>
-                  <p className="author-desc">Transparent and auditable delivery model</p>
-                </div>
-              </div>
-            </article>
-            <article className="testimonial-card">
-              <p className="testimonial-text">
-                College and school training pathways designed for employability, innovation and entrepreneurship at
-                scale.
-              </p>
-              <div className="testimonial-author">
-                <img src="/image/User.png" alt="Scale" />
-                <div className="author-info">
-                  <h4 className="author-name">High-Scale Capacity Building</h4>
-                  <p className="author-desc">From pilot batches to district-wide rollout</p>
-                </div>
-              </div>
-            </article>
+        <section className="school-transform-section" id="government">
+          {/* Decorative Background */}
+          <div className="transform-bg">
+            <div className="bg-circle bg-circle-1"></div>
+            <div className="bg-circle bg-circle-2"></div>
+            <div className="bg-line bg-line-1"></div>
+            <div className="bg-line bg-line-2"></div>
           </div>
-          <div style={{ textAlign: 'center', marginTop: '40px' }}>
+
+          <div className="transform-header">
+            <h2>School Transformation Programs</h2>
+            <p>Building AI-Powered Learning Ecosystems That Scale</p>
+          </div>
+          
+          {/* Creative Cutout Tiles */}
+          <div className="cutout-tiles-container">
+            
+            {/* Tile 1 - Image Right */}
+            <div className="cutout-tile tile-img-right">
+              <div className="tile-text-block">
+                <div className="tile-number">01</div>
+                <h3>AI-Powered Student Learning</h3>
+                <p>
+                  Personalized AI tutoring that adapts to each student's pace. From coding basics to robotics — we make every child future-ready with gamified STEM challenges and regional language support.
+                </p>
+                <div className="tile-features">
+                  <span><FaCheckCircle /> Adaptive Learning</span>
+                  <span><FaCheckCircle /> Hindi & Regional Languages</span>
+                  <span><FaCheckCircle /> Gamified Challenges</span>
+                </div>
+              </div>
+              <div className="tile-image-block">
+                <div className="image-cutout">
+                  <img src="/image/A_1.jpg" alt="Students learning AI" />
+                </div>
+                <div className="floating-badge badge-orange">5000+ Students</div>
+              </div>
+            </div>
+
+            {/* Tile 2 - Image Left */}
+            <div className="cutout-tile tile-img-left">
+              <div className="tile-image-block">
+                <div className="image-cutout">
+                  <img src="/image/A_2.jpeg" alt="Teacher training" />
+                </div>
+                <div className="floating-badge badge-purple">Train the Trainer</div>
+              </div>
+              <div className="tile-text-block">
+                <div className="tile-number">02</div>
+                <h3>Teacher Empowerment</h3>
+                <p>
+                  We transform teachers from traditional lecturers into modern facilitators. AI-assisted lesson planning, real-time student tracking, and hands-on tech workshops for 21st-century classrooms.
+                </p>
+                <div className="tile-features">
+                  <span><FaCheckCircle /> AI Teaching Assistants</span>
+                  <span><FaCheckCircle /> Smart Classroom Tools</span>
+                  <span><FaCheckCircle /> Continuous Development</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Tile 3 - Image Right */}
+            <div className="cutout-tile tile-img-right">
+              <div className="tile-text-block">
+                <div className="tile-number">03</div>
+                <h3>STEM & Robotics Hardware Kits</h3>
+                <p>
+                  Custom-built and ready-made hardware kits designed for Indian classrooms. Arduino, IoT sensors, AI modules, and robotics components — budget-friendly and built to last.
+                </p>
+                <div className="tile-features">
+                  <span><FaCheckCircle /> Customizable Kits</span>
+                  <span><FaCheckCircle /> Arduino & IoT Modules</span>
+                  <span><FaCheckCircle /> Budget-Friendly</span>
+                </div>
+              </div>
+              <div className="tile-image-block">
+                <div className="image-cutout">
+                  <img src="/image/A_3.jpg" alt="Hardware kits" />
+                </div>
+                <div className="floating-badge badge-green">Made in India</div>
+              </div>
+            </div>
+
+            {/* Tile 4 - Image Left */}
+            <div className="cutout-tile tile-img-left">
+              <div className="tile-image-block">
+                <div className="image-cutout">
+                  <img src="/image/A_5.jpg" alt="State-wide deployment" />
+                </div>
+                <div className="floating-badge badge-blue">Pan-India Ready</div>
+              </div>
+              <div className="tile-text-block">
+                <div className="tile-number">04</div>
+                <h3>State-wide Scalable Deployment</h3>
+                <p>
+                  From a single pilot school to entire districts — our blended learning model scales seamlessly. Complete compliance reporting and measurable impact analytics built-in.
+                </p>
+                <div className="tile-features">
+                  <span><FaCheckCircle /> Pilot to District</span>
+                  <span><FaCheckCircle /> Impact Analytics</span>
+                  <span><FaCheckCircle /> Government Compliant</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div className="transform-cta">
             <Link className="primary-cta-btn" href="/government">
-              View Government Operations →
+              Partner With Us →
             </Link>
+            <p className="cta-subtext">Join 200+ schools already transforming education</p>
           </div>
         </section>
 
         <section className="brochures-section" id="resources">
+          <div className="bootcamp-circuit-pattern"></div>
           <div className="section-header-centered">
             <h2>Explore Our Technical Bootcamps</h2>
             <p>Dive deep into our signature hardware, software, and AI specialized curriculum</p>
@@ -279,6 +384,7 @@ export default function HomePage() {
           <div className="brochures-grid">
             
             <a href="/info-PNT/HARDWARE Designing for  IOT based market products.png" target="_blank" rel="noopener noreferrer" className="brochure-card">
+              <span className="bootcamp-badge hardware">Hardware</span>
               <div className="brochure-image-wrap">
                 <img src="/info-PNT/HARDWARE Designing for  IOT based market products.png" alt="Hardware Design Bootcamp" loading="lazy" />
                 <div className="brochure-overlay">
@@ -293,6 +399,7 @@ export default function HomePage() {
             </a>
 
             <a href="/info-PNT/PCB Design Bootcamp from schematic to Gerber.jpeg" target="_blank" rel="noopener noreferrer" className="brochure-card">
+              <span className="bootcamp-badge pcb">PCB Design</span>
               <div className="brochure-image-wrap">
                 <img src="/info-PNT/PCB Design Bootcamp from schematic to Gerber.jpeg" alt="PCB Design Bootcamp" loading="lazy" />
                 <div className="brochure-overlay">
@@ -307,6 +414,7 @@ export default function HomePage() {
             </a>
 
             <a href="/info-PNT/Embedded Design for  IOT based market product.png" target="_blank" rel="noopener noreferrer" className="brochure-card">
+              <span className="bootcamp-badge embedded">Embedded</span>
               <div className="brochure-image-wrap">
                 <img src="/info-PNT/Embedded Design for  IOT based market product.png" alt="Embedded Design" loading="lazy" />
                 <div className="brochure-overlay">
@@ -321,6 +429,7 @@ export default function HomePage() {
             </a>
 
             <a href="/info-PNT/Web application development  for Market Product.png" target="_blank" rel="noopener noreferrer" className="brochure-card">
+              <span className="bootcamp-badge software">Software</span>
               <div className="brochure-image-wrap">
                 <img src="/info-PNT/Web application development  for Market Product.png" alt="Web Application Development" loading="lazy" />
                 <div className="brochure-overlay">
@@ -335,6 +444,7 @@ export default function HomePage() {
             </a>
 
             <a href="/info-PNT/AI block coding application development for Govt Project.png" target="_blank" rel="noopener noreferrer" className="brochure-card">
+              <span className="bootcamp-badge ai">AI & ML</span>
               <div className="brochure-image-wrap">
                 <img src="/info-PNT/AI block coding application development for Govt Project.png" alt="AI Block Coding for Government" loading="lazy" />
                 <div className="brochure-overlay">

@@ -17,16 +17,21 @@ export default function Footer() {
   return (
     <footer className="main-footer" id="contact">
       <section className="projects-newsletter">
-        <p className="projects-link">
-          Need a custom training proposal? <a href="https://api.whatsapp.com/send?phone=917788016666">Talk to our program desk →</a>
-        </p>
-        <div className="newsletter-signup">
-          <p className="newsletter-text">Newsletter to stay updated</p>
-          <div className="email-input">
-            <input type="email" placeholder="Your e-mail" />
-            <button type="submit" className="submit-button">
-              →
-            </button>
+        <div className="footer-logo-wrapper">
+          <div className="footer-logo-with-tagline">
+            <img src="/assets/logo.png" alt="AIPNT Logo" className="footer-logo" />
+            <span className="footer-logo-tagline">See & Learn | Do & Learn | Learn & Earn</span>
+          </div>
+        </div>
+        <div className="newsletter-wrapper">
+          <div className="newsletter-signup">
+            <p className="newsletter-text">Newsletter to stay updated</p>
+            <div className="email-input">
+              <input type="email" placeholder="Your e-mail" />
+              <button type="submit" className="submit-button">
+                →
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -88,7 +93,7 @@ export default function Footer() {
               <Link href="/corporate-training">Corporate Training</Link>
             </li>
             <li>
-              <Link href="/summer-internship">Summer Internship</Link>
+              <Link href="/summer-internship">College Training Programs</Link>
             </li>
             <li>
               <Link href="/school-stem">School STEM</Link>
@@ -128,6 +133,9 @@ export default function Footer() {
               <a href="#">Refund Policy</a>
             </li>
           </ul>
+          <p className="custom-training-proposal">
+            Need a custom training proposal? <a href="https://api.whatsapp.com/send?phone=917788016666">Talk to our program desk →</a>
+          </p>
         </div>
       </section>
 

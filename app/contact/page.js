@@ -88,7 +88,7 @@ export default function ContactPage() {
                     <select id="interest" required>
                       <option value="">Select an option</option>
                       <option value="corporate">Corporate Training</option>
-                      <option value="internship">Summer Internship</option>
+                      <option value="internship">College Training Programs</option>
                       <option value="school">School STEM Lab</option>
                       <option value="government">Government Program</option>
                       <option value="other">Other Inquiry</option>
