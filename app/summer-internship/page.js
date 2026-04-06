@@ -48,6 +48,39 @@ const audience = [
   { icon: <FaRocket />, title: 'Career Changers', desc: 'Professionals looking to transition into AI, data science or product development roles.' },
 ];
 
+const summerCourses = [
+  {
+    number: '01',
+    title: 'Web Application Development for Market Product',
+    desc: 'Build production-ready web applications using modern frameworks. Learn React, Next.js, databases, and deployment strategies for real market products.',
+    image: '/info-PNT/SummerInternshipCourses/Web application development  for Market Product.png',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSezkXYpYAI998UPFgvHu6cptBQetrkGrbTiPTN4_WaHL599bg/viewform?usp=header',
+    badge: '8 Weeks',
+    badgeColor: 'orange',
+    features: ['Full-Stack Development', 'Live Project', 'Industry Mentorship'],
+  },
+  {
+    number: '02',
+    title: 'Hardware Designing for IoT Based Market Products',
+    desc: 'Master PCB design, sensor integration, and embedded systems. Create IoT products ready for manufacturing with hands-on hardware prototyping.',
+    image: '/info-PNT/SummerInternshipCourses/HARDWARE Designing for  IOT based market products.png',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSduXdOSwMTvqeeWb5GAeBOeDBEjhTevSh7C53scn903qyBvhg/viewform?usp=header',
+    badge: 'Hands-On',
+    badgeColor: 'green',
+    features: ['Arduino & ESP32', 'PCB Design', 'IoT Protocols'],
+  },
+  {
+    number: '03',
+    title: 'STLC Internship Program - Web, Desktop & Mobile Testing',
+    desc: 'Learn complete Software Testing Life Cycle with real projects. Master manual testing, automation frameworks, and quality assurance best practices.',
+    image: '/info-PNT/SummerInternshipCourses/SDLC TESTING for Web products.png',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSd9UHHh458vzmvcjyb3cT6zD8_neJOj5-y4_TUjd4c36yPCJw/viewform?usp=header',
+    badge: 'Job Ready',
+    badgeColor: 'purple',
+    features: ['Manual Testing', 'Test Automation', 'API Testing'],
+  },
+];
+
 export default function SummerInternshipPage() {
   return (
     <>
@@ -87,10 +120,87 @@ export default function SummerInternshipPage() {
         </section>
 
         <section className={styles.pcbSection}>
-          <h2>Featured Bootcamp: PCB Design</h2>
-          <p className={styles.sectionSub}>A complete hardware engineering journey from schematic to Gerber.</p>
+          <h2>Internship Moments 2025</h2>
+          <p className={styles.sectionSub}>Highlights from our Summer Internship program activities.</p>
           <div className={styles.pamphletContainer}>
-            <img src="/info-PNT/PCB Design Bootcamp from schematic to Gerber.jpeg" alt="PCB Design Bootcamp" loading="lazy" />
+            <img src="/info-PNT/SummerInternshipmoments2025/image1.jpeg" alt="Summer Internship Moments 2025" loading="lazy" />
+          </div>
+        </section>
+
+        <section className={styles.coursesSection}>
+          <div className={styles.coursesBgPattern}></div>
+          <div className={styles.coursesHeader}>
+            <h2>Summer Internship Courses</h2>
+            <p>Choose your path and kickstart your career with hands-on projects</p>
+          </div>
+          
+          <div className={styles.courseTilesContainer}>
+            {summerCourses.map((course, index) => (
+              <div 
+                className={`${styles.courseTile} ${index % 2 === 0 ? styles.tileImgRight : styles.tileImgLeft}`} 
+                key={course.title}
+              >
+                {index % 2 === 0 ? (
+                  <>
+                    <div className={styles.tileTextBlock}>
+                      <div className={styles.tileNumber}>{course.number}</div>
+                      <h3>{course.title}</h3>
+                      <p>{course.desc}</p>
+                      <div className={styles.tileFeatures}>
+                        {course.features.map((feature) => (
+                          <span key={feature}><FaCheckCircle /> {feature}</span>
+                        ))}
+                      </div>
+                      <a
+                        className={styles.tileApplyBtn}
+                        href={course.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Apply Now →
+                      </a>
+                    </div>
+                    <div className={styles.tileImageBlock}>
+                      <div className={styles.imageCutout}>
+                        <img src={course.image} alt={course.title} loading="lazy" />
+                      </div>
+                      <div className={`${styles.floatingBadge} ${styles[`badge${course.badgeColor.charAt(0).toUpperCase() + course.badgeColor.slice(1)}`]}`}>
+                        {course.badge}
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className={styles.tileImageBlock}>
+                      <div className={styles.imageCutout}>
+                        <img src={course.image} alt={course.title} loading="lazy" />
+                      </div>
+                      <div className={`${styles.floatingBadge} ${styles[`badge${course.badgeColor.charAt(0).toUpperCase() + course.badgeColor.slice(1)}`]}`}>
+                        {course.badge}
+                      </div>
+                    </div>
+                    <div className={styles.tileTextBlock}>
+                      <div className={styles.tileNumber}>{course.number}</div>
+                      <h3>{course.title}</h3>
+                      <p>{course.desc}</p>
+                      <div className={styles.tileFeatures}>
+                        {course.features.map((feature) => (
+                          <span key={feature}><FaCheckCircle /> {feature}</span>
+                        ))}
+                      </div>
+                      <a
+                        className={styles.tileApplyBtn}
+                        href={course.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Apply Now →
+                      </a>
+                    </div>
+                  </>
+                )}
+              </div>
+            ))}
           </div>
         </section>
 

@@ -43,11 +43,27 @@ export default function Footer() {
           <div className="contact-item">
             <FaMapMarkerAlt className="contact-icon" />
             <div className="contact-text">
-              <strong>Bhubaneswar Campus</strong>
+              <strong>Bengaluru Office</strong>
               <p style={{ marginTop: '4px' }}>
-                Switchtech Incubation Center<br />
-                Silicon University, Bhubaneswar<br />
-                Odisha, India 751024
+                PNT, Whitefield<br />
+                Bengaluru - 560066<br />
+                Karnataka, India
+              </p>
+            </div>
+          </div>
+
+          <div className="other-offices-label">
+            <span>Our Other Offices</span>
+          </div>
+
+          <div className="contact-item">
+            <FaMapMarkerAlt className="contact-icon" />
+            <div className="contact-text">
+              <strong>HO – Khordha</strong>
+              <p style={{ marginTop: '4px' }}>
+                PNT, Near Forest Colony<br />
+                Khordha - 752057<br />
+                Odisha, India
               </p>
             </div>
           </div>
@@ -55,11 +71,11 @@ export default function Footer() {
           <div className="contact-item">
             <FaMapMarkerAlt className="contact-icon" />
             <div className="contact-text">
-              <strong>Khordha Headquarters</strong>
+              <strong>RO – USA</strong>
               <p style={{ marginTop: '4px' }}>
-                Near Forest Colony<br />
-                Khordha, Odisha<br />
-                India 752057
+                PNT, Maple Drive, Suite 100<br />
+                Streamwood, IL 60107<br />
+                USA
               </p>
             </div>
           </div>
@@ -107,16 +123,16 @@ export default function Footer() {
           <h3>Information</h3>
           <ul>
             <li>
-              <a href="#">Events</a>
+              <Link href="/coming-soon">Events</Link>
             </li>
             <li>
-              <a href="#">Partnerships</a>
+              <Link href="/coming-soon">Partnerships</Link>
             </li>
             <li>
-              <a href="#">Teach with Us</a>
+              <Link href="/coming-soon">Teach with Us</Link>
             </li>
             <li>
-              <a href="#">Career Support</a>
+              <Link href="/coming-soon">Career Support</Link>
             </li>
           </ul>
         </div>
@@ -124,13 +140,13 @@ export default function Footer() {
           <h3>Policies</h3>
           <ul>
             <li>
-              <a href="#">Privacy Policy</a>
+              <Link href="/coming-soon">Privacy Policy</Link>
             </li>
             <li>
-              <a href="#">Terms and Conditions</a>
+              <Link href="/coming-soon">Terms and Conditions</Link>
             </li>
             <li>
-              <a href="#">Refund Policy</a>
+              <Link href="/coming-soon">Refund Policy</Link>
             </li>
           </ul>
           <p className="custom-training-proposal">
@@ -141,18 +157,18 @@ export default function Footer() {
 
       <section className="social-copyright">
         <div className="social-icons">
-          <a href="#" className="social-icon" aria-label="LinkedIn">
+          <Link href="/coming-soon" className="social-icon" aria-label="LinkedIn">
             <FaLinkedinIn />
-          </a>
-          <a href="#" className="social-icon" aria-label="Facebook">
+          </Link>
+          <Link href="/coming-soon" className="social-icon" aria-label="Facebook">
             <FaFacebookF />
-          </a>
-          <a href="#" className="social-icon" aria-label="Instagram">
+          </Link>
+          <Link href="/coming-soon" className="social-icon" aria-label="Instagram">
             <FaInstagram />
-          </a>
-          <a href="#" className="social-icon" aria-label="YouTube">
+          </Link>
+          <Link href="/coming-soon" className="social-icon" aria-label="YouTube">
             <FaYoutube />
-          </a>
+          </Link>
           <a href="https://api.whatsapp.com/send?phone=917788016666" className="social-icon" aria-label="WhatsApp">
             <FaWhatsapp />
           </a>
