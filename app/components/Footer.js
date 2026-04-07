@@ -40,42 +40,14 @@ export default function Footer() {
         <div className="footer-column address">
           <h3>Contact Us</h3>
           
-          <div className="contact-item">
+          <div className="contact-item office-address-item">
             <FaMapMarkerAlt className="contact-icon" />
             <div className="contact-text">
-              <strong>Bengaluru Office</strong>
+              <strong>Office Address</strong>
               <p style={{ marginTop: '4px' }}>
-                PNT, Whitefield<br />
-                Bengaluru - 560066<br />
-                Karnataka, India
-              </p>
-            </div>
-          </div>
-
-          <div className="other-offices-label">
-            <span>Our Other Offices</span>
-          </div>
-
-          <div className="contact-item">
-            <FaMapMarkerAlt className="contact-icon" />
-            <div className="contact-text">
-              <strong>HO – Khordha</strong>
-              <p style={{ marginTop: '4px' }}>
-                PNT, Near Forest Colony<br />
-                Khordha - 752057<br />
-                Odisha, India
-              </p>
-            </div>
-          </div>
-
-          <div className="contact-item">
-            <FaMapMarkerAlt className="contact-icon" />
-            <div className="contact-text">
-              <strong>RO – USA</strong>
-              <p style={{ marginTop: '4px' }}>
-                PNT, Maple Drive, Suite 100<br />
-                Streamwood, IL 60107<br />
-                USA
+                PNT Software Services<br />
+                House No:25, Sarawathi Nilayam, Tinker Street,Cowlbazzar,<br />
+                Ballari, Karnataka,Pin-583102
               </p>
             </div>
           </div>

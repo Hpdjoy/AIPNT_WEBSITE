@@ -73,11 +73,13 @@ export default function HomePage() {
       <Navbar />
 
       <section className="bgvideo" id="home">
-        <p className="headText">
-          Transforming Potential <br />
-          into Next-Gen Expertise
-        </p>
-        <p className="subhead">See & Learn | Do & Learn | Learn & Earn</p>
+        <div className="bgvideoText">
+          <p className="headText">
+            Transforming Potential <br />
+            into Next-Gen Expertise
+          </p>
+          <p className="subhead">See & Learn | Do & Learn | Learn & Earn</p>
+        </div>
 
         <video src="/assets/bgVideo.mp4" className="bgfullvideo" muted autoPlay loop playsInline />
       </section>

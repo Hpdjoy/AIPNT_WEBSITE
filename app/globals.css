@@ -189,24 +189,28 @@ body {
   position: relative;
 }
 
-.headText {
-  font-size: 5rem;
-  color: white;
-  font-weight: 600;
+.bgvideoText {
   position: absolute;
   top: 200px;
   left: 50px;
   z-index: 1;
+  max-width: min(880px, calc(100% - 100px));
+}
+
+.headText {
+  font-size: 5rem;
+  color: white;
+  font-weight: 600;
+  line-height: 1.08;
+  margin: 0;
 }
 
 .subhead {
   font-size: 1.5rem;
   color: white;
   font-weight: 600;
-  position: absolute;
-  top: calc(200px + 12rem);
-  left: 50px;
-  z-index: 1;
+  margin-top: 20px;
+  line-height: 1.4;
 }
 
 .bgfullvideo {
@@ -2263,20 +2267,23 @@ a.highlight-text:hover {
     object-fit: cover;
   }
 
-  .headText {
-    font-size: 2.2rem;
-    top: 180px;
+  .bgvideoText {
+    top: 170px;
     left: 20px;
     right: 20px;
+    max-width: none;
     text-align: center;
+  }
+
+  .headText {
+    font-size: 2.2rem;
+    line-height: 1.12;
   }
 
   .subhead {
     font-size: 0.95rem;
-    top: 320px;
-    left: 20px;
-    right: 20px;
-    text-align: center;
+    margin-top: 12px;
+    line-height: 1.45;
   }
 
   .hero,
@@ -2286,6 +2293,21 @@ a.highlight-text:hover {
   .testimonials-container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .learning-cards-container {
+    align-items: center;
+    width: 100%;
+  }
+
+  .learning-card {
+    width: min(92vw, 320px);
+    margin: 0 auto;
+  }
+
+  .learning-card h3 {
+    text-align: center;
+    line-height: 1.35;
   }
 
   .feature-video-container,
@@ -2429,6 +2451,21 @@ a.highlight-text:hover {
 
   .contact-text {
     text-align: left;
+  }
+
+  .office-address-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .office-address-item .contact-icon {
+    margin-top: 0;
+  }
+
+  .office-address-item .contact-text {
+    text-align: center;
   }
 
   .other-offices-label {

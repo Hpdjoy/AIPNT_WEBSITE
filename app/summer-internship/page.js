@@ -79,6 +79,16 @@ const summerCourses = [
     badgeColor: 'purple',
     features: ['Manual Testing', 'Test Automation', 'API Testing'],
   },
+  {
+    number: '04',
+    title: 'AI & ML Training Program',
+    desc: 'Build practical AI and machine learning solutions with hands-on projects. Learn model development, data workflows, and deployment basics for real-world applications.',
+    image: '/info-PNT/SummerInternshipCourses/AIML TRAINING.png',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSejhuIp1eoclDD_n6aejSm--WKEwUlfPuXj56TtNXvab81ZXA/viewform?usp=header',
+    badge: 'AI Track',
+    badgeColor: 'blue',
+    features: ['Machine Learning', 'Model Building', 'Project Portfolio'],
+  },
 ];
 
 export default function SummerInternshipPage() {
