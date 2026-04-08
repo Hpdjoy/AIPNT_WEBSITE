@@ -294,7 +294,7 @@ export default function HomePage() {
               </div>
               <div className="tile-image-block">
                 <div className="image-cutout">
-                  <img src="/image/A_1.jpg" alt="Students learning AI" />
+                  <img src="/info-PNT/SchoolTransformationImages/AI-Powered%20Student%20Learning.jpg" alt="Students learning AI" />
                 </div>
                 <div className="floating-badge badge-orange">5000+ Students</div>
               </div>
@@ -304,7 +304,7 @@ export default function HomePage() {
             <div className="cutout-tile tile-img-left">
               <div className="tile-image-block">
                 <div className="image-cutout">
-                  <img src="/image/A_2.jpeg" alt="Teacher training" />
+                  <img src="/info-PNT/SchoolTransformationImages/Teacher%20Empowerment.jpg" alt="Teacher training" />
                 </div>
                 <div className="floating-badge badge-purple">Train the Trainer</div>
               </div>
@@ -338,7 +338,7 @@ export default function HomePage() {
               </div>
               <div className="tile-image-block">
                 <div className="image-cutout">
-                  <img src="/image/A_3.jpg" alt="Hardware kits" />
+                  <img src="/info-PNT/SchoolTransformationImages/STEM%20&%20Robotics%20Hardware%20Kits.jpg" alt="Hardware kits" />
                 </div>
                 <div className="floating-badge badge-green">Made in India</div>
               </div>
@@ -348,7 +348,7 @@ export default function HomePage() {
             <div className="cutout-tile tile-img-left">
               <div className="tile-image-block">
                 <div className="image-cutout">
-                  <img src="/image/A_5.jpg" alt="State-wide deployment" />
+                  <img src="/info-PNT/SchoolTransformationImages/StateLevl%20Deployment.jpg" alt="State-wide deployment" />
                 </div>
                 <div className="floating-badge badge-blue">Pan-India Ready</div>
               </div>
