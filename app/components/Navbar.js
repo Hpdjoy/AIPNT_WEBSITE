@@ -25,7 +25,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="logo">
         <Link href="/">
-          <img src="/assets/logo.png" height="100" alt="AIPNT logo" />
+          <img src="/assets/logo.png" height="58" alt="AIPNT logo" />
         </Link>
       </div>
       <button
