@@ -81,6 +81,7 @@ export default function HomePage() {
           <p className="subhead">See & Learn | Do & Learn | Learn & Earn</p>
         </div>
 
+ 
         <video
           className="bgfullvideo"
           poster="/assets/bgVideo-poster.webp"
