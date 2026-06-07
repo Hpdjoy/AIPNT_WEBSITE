@@ -187,6 +187,7 @@ body {
 
 .bgvideo {
   position: relative;
+  background: #111 url('/assets/bgVideo-poster.webp') center / cover no-repeat;
 }
 
 .bgvideoText {
@@ -215,6 +216,8 @@ body {
 
 .bgfullvideo {
   width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   display: block;
 }
 

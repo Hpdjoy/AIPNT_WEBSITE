@@ -81,7 +81,18 @@ export default function HomePage() {
           <p className="subhead">See & Learn | Do & Learn | Learn & Earn</p>
         </div>
 
-        <video src="/assets/bgVideo.mp4" className="bgfullvideo" muted autoPlay loop playsInline />
+        <video
+          className="bgfullvideo"
+          poster="/assets/bgVideo-poster.webp"
+          preload="auto"
+          muted
+          autoPlay
+          loop
+          playsInline
+          aria-hidden="true"
+        >
+          <source src="/assets/bgVideo.mp4" type="video/mp4" />
+        </video>
       </section>
 
       <main>
