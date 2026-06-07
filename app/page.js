@@ -92,7 +92,7 @@ export default function HomePage() {
           playsInline
           aria-hidden="true"
         >
-          <source src="/assets/bgvideo.mp4" type="video/mp4" />
+          <source src="/assets/bgVideo.mp4" type="video/mp4" />
         </video>
       </section>
 

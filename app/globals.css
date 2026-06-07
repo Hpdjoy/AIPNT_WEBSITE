@@ -2122,6 +2122,7 @@ a.highlight-text:hover {
 }
 
 .phone-button {
+  z-index: 10;
   position: fixed;
   left: 20px;
   bottom: 20px;
