@@ -183,7 +183,7 @@ export default function HomePage() {
               allowFullScreen
             />
           </div>
-          <div className="feature-content">
+          <div className="feature-content corporate-feature-card">
             <h2>Corporate Training</h2>
             <ul className="feature-list">
               <li>
@@ -208,7 +208,7 @@ export default function HomePage() {
                 </div>
               </li>
             </ul>
-            <Link className="primary-cta-btn" href="/corporate-training" style={{ marginTop: '20px', display: 'inline-block' }}>
+            <Link className="primary-cta-btn" href="/corporate-training" style={{ margin: '20px auto 0', display: 'block', width: 'fit-content' }}>
               View Corporate Capabilities →
             </Link>
           </div>

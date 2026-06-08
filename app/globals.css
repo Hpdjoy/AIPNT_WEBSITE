@@ -852,6 +852,13 @@ main {
   list-style: none;
 }
 
+.corporate-feature-card{
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  
+}
+
 .feature-list li {
   display: flex;
   align-items: flex-start;
