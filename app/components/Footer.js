@@ -1,6 +1,6 @@
 "use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 import {
   FaWhatsapp,
   FaLinkedinIn,
@@ -10,8 +10,8 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
-  FaClock
-} from 'react-icons/fa';
+  FaClock,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -19,8 +19,14 @@ export default function Footer() {
       <section className="projects-newsletter">
         <div className="footer-logo-wrapper">
           <div className="footer-logo-with-tagline">
-            <img src="/assets/logo.png" alt="AIPNT Logo" className="footer-logo" />
-            <span className="footer-logo-tagline">See & Learn | Do & Learn | Learn & Earn</span>
+            <img
+              src="/assets/logo.png"
+              alt="AIPNT Logo"
+              className="footer-logo"
+            />
+            <span className="footer-logo-tagline">
+              See & Learn | Do & Learn | Learn & Earn
+            </span>
           </div>
         </div>
         <div className="newsletter-wrapper">
@@ -39,15 +45,17 @@ export default function Footer() {
       <section className="footer-columns">
         <div className="footer-column address">
           <h3>Contact Us</h3>
-          
+
           <div className="contact-item office-address-item">
             <FaMapMarkerAlt className="contact-icon" />
             <div className="contact-text">
               <strong>Office Address</strong>
-              <p style={{ marginTop: '4px' }}>
-                PNT Software Services<br />
-                House No:25, Sarawathi Nilayam, Tinker Street,Cowlbazzar,<br />
-                Ballari, Karnataka,Pin-583102
+              <p style={{ marginTop: "4px" }}>
+                AIPNT Technology PVT. LTD. (AIPNT)
+                <br />
+                Room no 212, DLF Cyber City (Switchtech Incubation of Silicon
+                University) 516, Infocity Ave, Chandaka Industrial Estate,
+                Patia, Bhubaneswar, Odisha 751024.
               </p>
             </div>
           </div>
@@ -55,14 +63,21 @@ export default function Footer() {
           <div className="contact-item">
             <FaPhoneAlt className="contact-icon highlight" />
             <div className="contact-text">
-              <a href="tel:+917788016666" className="highlight-text">+91 77880 16666</a>
+              <a href="tel:+917788016666" className="highlight-text">
+                +91 77880 16666
+              </a>
             </div>
           </div>
 
           <div className="contact-item">
             <FaEnvelope className="contact-icon highlight" />
             <div className="contact-text">
-              <a href="mailto:info.aipnt@gmail.com" className="highlight-text">info.aipnt@gmail.com</a>
+              <a
+                href="mailto:director@pntservices.co.in"
+                className="highlight-text"
+              >
+                director@pntservices.co.in
+              </a>
             </div>
           </div>
 
@@ -72,7 +87,6 @@ export default function Footer() {
               <p>Mon - Sun: 9:00 AM to 6:00 PM (IST)</p>
             </div>
           </div>
-
         </div>
         <div className="footer-column explore">
           <h3>Explore</h3>
@@ -122,26 +136,49 @@ export default function Footer() {
             </li>
           </ul>
           <p className="custom-training-proposal">
-            Need a custom training proposal? <a href="https://api.whatsapp.com/send?phone=917788016666">Talk to our program desk →</a>
+            Need a custom training proposal?{" "}
+            <a href="https://api.whatsapp.com/send?phone=917788016666">
+              Talk to our program desk →
+            </a>
           </p>
         </div>
       </section>
 
       <section className="social-copyright">
         <div className="social-icons">
-          <Link href="/coming-soon" className="social-icon" aria-label="LinkedIn">
+          <Link
+            href="/coming-soon"
+            className="social-icon"
+            aria-label="LinkedIn"
+          >
             <FaLinkedinIn />
           </Link>
-          <Link href="/coming-soon" className="social-icon" aria-label="Facebook">
+          <Link
+            href="/coming-soon"
+            className="social-icon"
+            aria-label="Facebook"
+          >
             <FaFacebookF />
           </Link>
-          <Link href="/coming-soon" className="social-icon" aria-label="Instagram">
+          <Link
+            href="/coming-soon"
+            className="social-icon"
+            aria-label="Instagram"
+          >
             <FaInstagram />
           </Link>
-          <Link href="/coming-soon" className="social-icon" aria-label="YouTube">
+          <Link
+            href="/coming-soon"
+            className="social-icon"
+            aria-label="YouTube"
+          >
             <FaYoutube />
           </Link>
-          <a href="https://api.whatsapp.com/send?phone=917788016666" className="social-icon" aria-label="WhatsApp">
+          <a
+            href="https://api.whatsapp.com/send?phone=917788016666"
+            className="social-icon"
+            aria-label="WhatsApp"
+          >
             <FaWhatsapp />
           </a>
         </div>
