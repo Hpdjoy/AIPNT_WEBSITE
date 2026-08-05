@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import InaugurationGallery from './components/InaugurationGallery';
+import BlogSection from './components/BlogSection';
 import {
   FaWhatsapp,
   FaLinkedinIn,
@@ -474,6 +476,10 @@ export default function HomePage() {
 
           </div>
         </section>
+
+        <InaugurationGallery />
+
+        <BlogSection />
 
         <section className="lead-generation-banner">
           <h2>Ready to Level Up?</h2>

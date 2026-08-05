@@ -1,7 +1,9 @@
+"use client";
+
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { FaWhatsapp } from 'react-icons/fa';
-import { FaLightbulb, FaRocket, FaHandshake, FaGraduationCap } from 'react-icons/fa';
+import InaugurationGallery from '../components/InaugurationGallery';
+import { FaWhatsapp, FaLightbulb, FaRocket, FaHandshake, FaGraduationCap } from 'react-icons/fa';
 import styles from './page.module.css';
 
 const journeySteps = [
@@ -87,6 +89,8 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
+        <InaugurationGallery />
 
         <section className={styles.ctaSection}>
           <h2>Join Us in Shaping the Future</h2>
