@@ -80,11 +80,19 @@
 }
 
 .articleBody {
+  background: #0b0f19;
   max-width: 850px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 28px 24px 40px;
   font-size: 17px;
   line-height: 1.85;
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.contentSection {
   color: #cbd5e1;
 }
 
@@ -108,6 +116,7 @@
 }
 
 .bodyParagraph {
+  color: #cbd5e1;
   margin-bottom: 24px;
   white-space: pre-line;
 }
@@ -235,6 +244,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #cbd5e1;
 }
 
 .shareIcons {
@@ -256,10 +266,37 @@
   .headerContainer h1 {
     font-size: 28px;
   }
+  .articleHeader {
+    padding: 120px 18px 48px;
+  }
+  .imageContainer {
+    margin: -24px auto 32px;
+    padding: 0 16px;
+  }
+  .imageContainer img {
+    border-radius: 18px;
+  }
+  .articleBody {
+    margin: 0 16px;
+    padding: 22px 18px 32px;
+    border-radius: 20px;
+  }
   .leadParagraph {
     font-size: 17px;
+    padding: 18px;
+  }
+  .sectionHeading {
+    font-size: 22px;
+  }
+  .quoteBlock {
+    padding: 24px 20px;
   }
   .photoGrid {
     grid-template-columns: 1fr;
+  }
+  .shareBar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
   }
 }
